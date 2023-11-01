@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<ul>
+  <li><a href="about.html">About</a></li>
+  <li><a href="index.html">Add Event</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="">Search</a></li>
+  <li><a href="login.html">Login</a></li>
+</ul>
+
+<h1>Search
+    <img src="vsu_logo.png" alt="vsu logo over campus" style="width:50px;height:50px;">
+</h1>
+<body>
+  <form>
+    <label for="search">Search</label><br>
+    <input type="text" id="search" name="search" placeholder="Enter Keywords">
+    <input type="button" id="search_button" value="Search">
+  </form>
+</body>
+
+<style>
+  div{
+      color:black;
+      background-color: orange;
+      
+  }
+  h1{
+      color:black;
+      background-color: orange;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif'
+  }
+
+  body{
+    background-color: lightgray;
+    color: navy;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif'
+    
+  }
+
+  label{
+    color: navy;
+    font-size: 20px;
+  }
+
+  input{
+    background-color: white;
+    text-align: center;
+  }
+
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: orange;
+  }
+
+  li {
+  float: left;
+  }
+
+  li a {
+  display: block;
+  color: navy;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  }
+
+  li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+</style>
+
+
+<!-- <?php
+  </style>
+  // Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+
+$sql = "SELECT evt_location FROM vsu_events";
+$result = $conn->query($sql);
+
+// echo $sql;
+
+while($row = mysqli_fetch_array($result)) {
+  echo $row['evt_location']."<br><br>";// Print a single column data
+  echo "<input type=\"radio\" id=\"".$row["evt_location"]. "\" name=\"evt_location\" value=\"". $row["evt_location"]. "\">";
+  
+}
+
+
+
+echo "<h3 style = \"color:blue;\">Connected Successfully! </h3>";
+// $conn->close();
+
+
+?>
+ -->
+</html>
